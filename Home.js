@@ -16,11 +16,11 @@ export default function Home({ navigation }){
       </View>
       <View style={styles.footer}>
         <View>
-          <Ionicons name="analytics" size={50} color="#000000ff"/>
+          <Ionicons name="analytics" size={50} color="#000000ff" onPress={() => navigation.navigate('Registros')}/>
           <Text style={styles.registroBtn}> Registros</Text>
         </View>
         <View>
-          <Ionicons name="exit" size={50} color="#000000ff"/>
+          <Ionicons name="exit" size={50} color="#000000ff" onPress={() => navigation.navigate('LoginScreen')}/>
           <Text style={styles.sairBtn}>Sair</Text>
         </View>
         

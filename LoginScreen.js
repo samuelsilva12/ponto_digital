@@ -3,7 +3,7 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, TextInput, Button, Image, ActivityIndicator } from 'react-native';
 import { useFonts, Poppins_400Regular, Poppins_700Bold } from '@expo-google-fonts/poppins';
 
-export default function App() {
+export default function App({ navigation}) {
   const [fontsLoaded] = useFonts({
     Poppins_400Regular,
     Poppins_700Bold,
@@ -28,7 +28,7 @@ export default function App() {
       <View style={styles.dados}>
         <TextInput style={styles.inputEmail} placeholder="Matricula: ex(4444)" />
         <TextInput style={styles.inputSenha} placeholder="Senha" secureTextEntry />
-        <Button title="Login" color="#000" />
+        <Button title="Login" color="#000" onPress={() => navigation.navigate('Home')}/>
       </View>
     </View>
   );

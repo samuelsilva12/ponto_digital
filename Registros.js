@@ -1,7 +1,7 @@
 import{View,Text,Button,StyleSheet, Image} from 'react-native'
 import { Ionicons } from '@expo/vector-icons';
 
-export default function Registros(){
+export default function Registros({ navigation}){
   return(
     <View style={styles.container}>
         <View style={styles.bordaTop}>
@@ -23,11 +23,11 @@ export default function Registros(){
         </View>
         <View style={styles.footer}>
               <View>
-                <Ionicons name="home" size={50} color="#000000ff"/>
+                <Ionicons name="home" size={50} color="#000000ff" onPress={() => navigation.navigate('Home')}/>
                 <Text style={styles.homeBtn}>  Home</Text>
               </View>
               <View>
-                <Ionicons name="exit" size={50} color="#000000ff"/>
+                <Ionicons name="exit" size={50} color="#000000ff" onPress={() => navigation.navigate('LoginScreen')}/>
                 <Text style={styles.sairBtn}>Sair</Text>
               </View>
         </View>
