@@ -1,0 +1,4 @@
+backgriund = #f5f6f7
+background2 = #ffffff
+cabecalho = #1953c0ff'
+bordas = #e2e2e2ff
