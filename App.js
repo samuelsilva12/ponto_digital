@@ -10,23 +10,21 @@ const Stack = createNativeStackNavigator();
 export default function App(){
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="LoginScreen">
+      <Stack.Navigator initialRouteName="Registros">
         <Stack.Screen 
         name="LoginScreen"
         component={LoginScreen}
-        options={{title:'Tela de login'}}
         />
         <Stack.Screen 
         name="Home"
         component={Home}
-        options={{title:'Tela principal'}}
+        
         />
         <Stack.Screen
         name="Registros"
         component={Registros}
         options={{title:'Tela de registros'}}
         />
-
       </Stack.Navigator>
     </NavigationContainer>
   )

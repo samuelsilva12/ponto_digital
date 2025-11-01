@@ -1,4 +1,4 @@
-import{View,Text,Button,StyleSheet, Image} from 'react-native'
+import{View,Text,Button,StyleSheet, Image, TouchableOpacity} from 'react-native'
 import { Ionicons } from '@expo/vector-icons';
 
 export default function Home({ navigation }){
@@ -11,65 +11,83 @@ export default function Home({ navigation }){
               />
       </View>
       <View style={styles.containercentral}>
+        <Image 
+        source={require('./assets/face.png')}
+        style={styles.face}
+        />
         <Text style={styles.textCentral}>Clique para registrar seu ponto.</Text>
-         <Ionicons name="camera-outline" size={50} color="#8b8b8bff"  style={styles.icone}/>
+        <Image source={require('./assets/seta.png')} style={styles.imgSeta} />
+         
       </View>
       <View style={styles.footer}>
-        <View>
-          <Ionicons name="analytics" size={50} color="#000000ff" onPress={() => navigation.navigate('Registros')}/>
-          <Text style={styles.registroBtn}> Registros</Text>
-        </View>
-        <View>
-          <Ionicons name="exit" size={50} color="#000000ff" onPress={() => navigation.navigate('LoginScreen')}/>
-          <Text style={styles.sairBtn}>Sair</Text>
-        </View>
-        
+       <TouchableOpacity style={styles.btnesq}>
+        <Ionicons name="analytics" size={45} color="#e9e9e9ff" onPress={() => navigation.navigate('Registros')}/>
+       </TouchableOpacity>
+       <TouchableOpacity style={styles.btnmeio}>
+           <Ionicons name="camera-outline" size={50} color="#b31921"  style={styles.iconCamera}/>
+       </TouchableOpacity>
+       <TouchableOpacity style={styles.btndir}>
+        <Ionicons name="exit" size={50} color="#e9e9e9ff" onPress={() => navigation.navigate('LoginScreen')}/>
+       </TouchableOpacity>
       </View>
     </View>
   );
 }
 const styles = StyleSheet.create({
   content:{
-    flex:1
+    flex:1,
+    backgroundColor:'#0264b0',
   },
   topo:{
-    paddingBottom: '2%',
-    backgroundColor: '#e2e2e2ff',
+    backgroundColor: '#ed2633',
     alignItems:'center'
   },
   logo:{
     width:100,
     height:90,
   },
-  icone:{ // icone central de camera
-    padding:10,
-    borderRadius: 40,
-    borderWidth: 2,
-    borderColor:'#979696ff' 
-  },
   textCentral:{
-    marginBottom:20,
     fontSize: 20,
-    color:'#3d3c37ff'
+    color:'#e9e9e9ff',
+    marginBottom:15
   },
   containercentral:{ // todo o conteudo do centro da tela
     flex: 1,
-    justifyContent: 'center', 
+    justifyContent: 'flex-end', 
     alignItems: 'center',
-    backgroundColor:'#f5f6f7'
+    
+    marginTop:5
+  },
+  face:{
+    height:80,
+    width:80,
+    marginBottom:40
+  },
+  imgSeta:{
+    height:'30%',
+    width:'40%',
+    transform:[{rotate:'45deg'}],
+    marginLeft:'45%',
+    marginRight:'55%',
+    marginBottom:50
   },
   footer:{
     flexDirection:'row',
     justifyContent:'space-around',
-    width:'100%',
-    marginBottom:16,
-    backgroundColor:'#e2e2e2ff',
+    backgroundColor:'#ed2633'
   },
-  registroBtn:{ // botao que encaminha para historico de pontos batidos
-    color:'#000000ff',
+  btnesq:{
+    top:+19
   },
-  sairBtn:{
-    color:'#000000ff',
+  btnmeio:{
+    top:-45,
+    borderWidth:7,
+    borderRadius:'50%',
+    padding:15,
+    backgroundColor:'#e9e9e9ff',
+    borderColor:'#0264b0'
+  }, 
+  btndir:{
+    top:+19
   }
 })
-
