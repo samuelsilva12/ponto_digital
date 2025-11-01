@@ -14,16 +14,17 @@ export default function App(){
         <Stack.Screen 
         name="LoginScreen"
         component={LoginScreen}
+        options={{ headerShown: false }}
         />
         <Stack.Screen 
         name="Home"
         component={Home}
-        
+        options={{ headerShown: false }}
         />
         <Stack.Screen
         name="Registros"
         component={Registros}
-        options={{title:'Tela de registros'}}
+        options={{ headerShown: false }}
         />
       </Stack.Navigator>
     </NavigationContainer>

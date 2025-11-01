@@ -40,11 +40,13 @@ const styles = StyleSheet.create({
   },
   topo:{
     backgroundColor: '#ed2633',
-    alignItems:'center'
+    alignItems:'center',
+    height:120
   },
   logo:{
     width:100,
     height:90,
+    marginTop:30
   },
   textCentral:{
     fontSize: 20,
