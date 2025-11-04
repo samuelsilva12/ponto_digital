@@ -23,51 +23,51 @@
     return (
 
 
-  <ScrollView style={styles.content}  contentContainerStyle={{ paddingBottom: 50 }}> 
-    <View style={styles.header}>
-      <Ionicons name="chevron-back" size={50} color="#0264b0" style={styles.back} onPress={()=>navigation.navigate('Home')} />
-      <Text style={styles.titulo}>Horas de trabalho</Text>
+<ScrollView style={styles.content}  contentContainerStyle={{ paddingBottom: 50 }}> 
+<View style={styles.header}>
+  <Ionicons name="chevron-back" size={50} color="#0264b0" style={styles.back} onPress={()=>navigation.navigate('Home')} />
+  <Text style={styles.titulo}>Horas de trabalho</Text>
+</View>
+<View style={styles.divcard}>
+    <View style={styles.card}>
+      <Text style={styles.dia}>Dom 10/10/2025 </Text>
+      <Text style={styles.dadoscard}>00:00</Text>
+      <Text style={styles.dadoscard}>Você não trabalhou este dia!</Text>
     </View>
-              <View style={styles.divcard}>
-                <View style={styles.card}>
-                  <Text style={styles.dia}>Dom 10/10/2025 </Text>
-                  <Text style={styles.dadoscard}>00:00</Text>
-                  <Text style={styles.dadoscard}>Você não trabalhou este dia!</Text>
-                </View>
-                <View style={styles.card}>
-                  <Text style={styles.dia}>Seg 11/10/2025</Text>
-                  <Text style={styles.dadoscard}>Entrada: 08:01  - Saída: 18:05</Text>
-                </View>
-                <View style={styles.card}>
-                  <Text style={styles.dia}>Ter 112/10/2025</Text>
-                  <Text style={styles.dadoscard}>Entrada: 08:01  - Saída: 19:01</Text>
-                  <Text style={[styles.dadoscard, styles.extra]}>Horas extra: 1 horas</Text>
-                </View>
-                <View style={styles.card}>
-                  <Text style={styles.dia}>Qua 13/10/2025</Text>
-                  <Text style={styles.dadoscard}>Entrada: 08:01  - Saída: 18:05</Text>
-                </View>
-                <View style={styles.card}>
-                  <Text style={styles.dia}>Qui 14/10/2025</Text>
-                  <Text style={styles.dadoscard}>00:00</Text>
-                  <Text style={[styles.falta, styles.dadoscard]}>Você faltou !</Text>
-                </View>
-                <View style={styles.card}>
-                  <Text style={styles.dia}>Sex 15/10/2025</Text>
-                  <Text style={styles.dadoscard}>Entrada: 08:01  - Saída: 19:01</Text>
-                  <Text style={[styles.dadoscard, styles.extra]}>Horas extra: 1 horas</Text>
-                </View>
-                <View style={styles.card}>
-                  <Text style={styles.dia}>Sáb 16/10/2025</Text>
-                  <Text style={styles.dadoscard}>Entrada: 08:01  - Saída: 18:05</Text>
-                </View>
-                <View style={styles.card}>
-                  <Text style={styles.dia}>Total de faltas e horas extra</Text>
-                  <Text style={[styles.falta, styles.dadoscard]}>Dias faltados: 1</Text>
-                  <Text style={[styles.dadoscard, styles.extra]}>Total de hora extra: 2:02 horas</Text>
-                </View>
-          </View>
-        </ScrollView>
+    <View style={styles.card}>
+      <Text style={styles.dia}>Seg 11/10/2025</Text>
+      <Text style={styles.dadoscard}>Entrada: 08:01  - Saída: 18:05</Text>
+    </View>
+    <View style={styles.card}>
+      <Text style={styles.dia}>Ter 112/10/2025</Text>
+      <Text style={styles.dadoscard}>Entrada: 08:01  - Saída: 19:01</Text>
+      <Text style={[styles.dadoscard, styles.extra]}>Horas extra: 1 horas</Text>
+    </View>
+    <View style={styles.card}>
+      <Text style={styles.dia}>Qua 13/10/2025</Text>
+      <Text style={styles.dadoscard}>Entrada: 08:01  - Saída: 18:05</Text>
+    </View>
+    <View style={styles.card}>
+      <Text style={styles.dia}>Qui 14/10/2025</Text>
+      <Text style={styles.dadoscard}>00:00</Text>
+      <Text style={[styles.falta, styles.dadoscard]}>Você faltou !</Text>
+    </View>
+    <View style={styles.card}>
+      <Text style={styles.dia}>Sex 15/10/2025</Text>
+      <Text style={styles.dadoscard}>Entrada: 08:01  - Saída: 19:01</Text>
+      <Text style={[styles.dadoscard, styles.extra]}>Horas extra: 1 horas</Text>
+    </View>
+    <View style={styles.card}>
+      <Text style={styles.dia}>Sáb 16/10/2025</Text>
+      <Text style={styles.dadoscard}>Entrada: 08:01  - Saída: 18:05</Text>
+    </View>
+    <View style={styles.card}>
+      <Text style={styles.dia}>Total de faltas e horas extra</Text>
+      <Text style={[styles.falta, styles.dadoscard]}>Dias faltados: 1</Text>
+      <Text style={[styles.dadoscard, styles.extra]}>Total de hora extra: 2:02 horas</Text>
+    </View>
+</View>
+</ScrollView>
 
     );
   }

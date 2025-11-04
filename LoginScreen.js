@@ -31,7 +31,7 @@ export default function App({ navigation}) {
         <TouchableOpacity style={styles.btn} onPress={()=>navigation.navigate('Home')}> 
           <Text style={styles.textBtn}>Login</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.btn}> 
+        <TouchableOpacity style={styles.btn} onPress={()=>navigation.navigate('Gestores')}> 
           <Text style={styles.textBtn}>Gestores</Text>
         </TouchableOpacity>
       </View>

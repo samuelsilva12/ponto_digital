@@ -4,13 +4,14 @@ import * as React from 'react';
 import LoginScreen  from './LoginScreen';
 import Home from './Home'
 import Registros from "./Registros";
+import Gestores from "./Gestores";
 
 const Stack = createNativeStackNavigator();
 
 export default function App(){
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Registros">
+      <Stack.Navigator initialRouteName="Gestores">
         <Stack.Screen 
         name="LoginScreen"
         component={LoginScreen}
@@ -26,7 +27,12 @@ export default function App(){
         component={Registros}
         options={{ headerShown: false }}
         />
+        <Stack.Screen
+        name="Gestores"
+        component={Gestores}
+        options={{ headerShown: false }}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   )
-}
+}      
