@@ -75,10 +75,10 @@
   const styles = StyleSheet.create({
   content:{
     flex:1,
-    backgroundColor:'#0264b0',
+    backgroundColor:'#91c0e9ff',
   },
   header:{
-      backgroundColor:'#ed2633',
+      backgroundColor:'#FF4D4D',
     height:100
   },
   back:{

@@ -18,20 +18,18 @@ import { LineChart } from "react-native-chart-kit";
       );
     }
   return (
-    
     <ScrollView style={styles.container}>
       <View style={styles.header}>
         <Text style={styles.titulopag}>Gestão de pontos</Text>
-        <Ionicons name='exit' size={40} style={styles.exit} onPress={()=>navigation.navigate('LoginScreen')} />
-          
+        <Ionicons name='exit' size={40} style={styles.exit} onPress={()=>navigation.navigate('LoginScreen')}/>
       </View>
       <View style={styles.main}>
             <View>
               <Text style={styles.titulo}>Funcionarios :</Text>
               <Text style={styles.funci}>João Jose da Silva</Text>
-              <Text style={styles.funci}>João Jose da Silva</Text>
-              <Text style={styles.funci}>João Jose da Silva</Text>
-              <Text style={styles.funci}>João Jose da Silva</Text>
+              <Text style={styles.funci}>Maria do Rosario</Text>
+              <Text style={styles.funci}>Pedro Araujo</Text>
+              <Text style={styles.funci}>Irineu Gonçalves</Text>
             </View>
             <View>
               <Text style={styles.titulo}>Função :</Text>
@@ -116,10 +114,10 @@ import { LineChart } from "react-native-chart-kit";
 const styles = StyleSheet.create({
 container:{
   flex:1,
-    backgroundColor:'#0264b0'
+    backgroundColor:'#BEE1FF'
 },
 header:{
-  backgroundColor:'#b31921',
+  backgroundColor:'#FF4D4D',
   height:100,
   justifyContent:'space-between',
 },
@@ -137,7 +135,7 @@ exit:{
   color:'white'
 },
 main:{
-   backgroundColor:'#b31921',
+   backgroundColor:'#FF4D4D',
    marginTop:20,
    width:400,
    marginLeft:'auto',

@@ -17,7 +17,6 @@ export default function Home({ navigation }){
         />
         <Text style={styles.textCentral}>Clique para registrar seu ponto.</Text>
         <Image source={require('./assets/seta.png')} style={styles.imgSeta} />
-         
       </View>
       <View style={styles.footer}>
        <TouchableOpacity style={styles.btnesq}>
@@ -36,10 +35,10 @@ export default function Home({ navigation }){
 const styles = StyleSheet.create({
   content:{
     flex:1,
-    backgroundColor:'#0264b0',
+    backgroundColor:'#91c0e9ff',
   },
   topo:{
-    backgroundColor: '#ed2633',
+    backgroundColor: '#FF4D4D',
     alignItems:'center',
     height:120
   },
@@ -76,7 +75,7 @@ const styles = StyleSheet.create({
   footer:{
     flexDirection:'row',
     justifyContent:'space-around',
-    backgroundColor:'#ed2633'
+    backgroundColor:'#FF4D4D'
   },
   btnesq:{
     top:+19
@@ -87,7 +86,7 @@ const styles = StyleSheet.create({
     borderRadius:'50%',
     padding:15,
     backgroundColor:'#e9e9e9ff',
-    borderColor:'#0264b0'
+    borderColor:'#FF4D4D'
   }, 
   btndir:{
     top:+19

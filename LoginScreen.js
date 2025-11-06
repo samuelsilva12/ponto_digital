@@ -16,7 +16,6 @@ export default function App({ navigation}) {
       </View>
     );
   }
-
   return (
     <View style={styles.container}>
       <Image
@@ -43,7 +42,7 @@ export default function App({ navigation}) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#0264b0',
+    backgroundColor: '#91c0e9ff',
     alignItems: 'center',
     justifyContent: 'center',
   },
